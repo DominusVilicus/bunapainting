@@ -1,0 +1,38 @@
+.icon-text-container {
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    .icon-text{
+        color: $theme1;
+        font-size: 1.3em;
+        padding-right: 8px;
+    }
+    .icon-container{
+        color: white;
+        background: $theme1;
+        height: 40px;
+        width: 40px;
+        border-radius: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    }
+    &.light{
+        padding: 8px 0;
+        .icon-text{
+            color: white;
+            padding: 0;
+            padding-left: 10px;
+            font-size: 1.2em;
+            word-break: break-word;
+        }
+        .icon-container{
+            background: white;
+            color: $theme1;
+            height: 35px;
+            width: 35px;
+            flex: 0 0 auto;
+        }
+    }
+}

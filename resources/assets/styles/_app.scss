@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background: #FAFAFA;
+    color: #222;
+}
+
+a{
+    text-decoration: none;
+    color: $theme3;
+    font-weight: 500;
+}
+
+.end {
+    margin-left: auto;
+    &.mobile {
+        @media (max-width: $phone) {
+            margin: 0;
+        }
+    }
+    &.tablet {
+        @media (max-width: $tablet) {
+            margin: 0;
+        }
+    }
+}
+
+.text-shadow {
+    text-shadow: 0 0 4px rgba(0,0,0,0.6), 0 1px 2px rgba(0,0,0,0.7);
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-right {
+    text-align: right;
+    &.tablet{
+        @media (max-width: $tablet) {
+            text-align: left;
+        }
+    }
+}
+
+.align-right-always {
+    text-align: right
+}
+
+.text-align-justify{
+    text-align: justify;
+}
+
+.title{
+    font-size: 2.5em;
+    font-weight: 400;
+    @media (max-width: $laptop) {
+        font-size: 2em;
+    }
+    @media (max-width: $tablet) {
+        font-size: 1.5em;
+    }
+}
+
+.sub-title{
+    font-size: 1.2em;
+    font-weight: 400;
+    @media (max-width: $tablet) {
+        font-size: 0.9em;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+h2, h3 {
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-top: 0.6em;
+    margin-bottom: 0.4em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.margin-top{
+    margin-top: 15px;
+}
+
+.flex-center-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+    flex: 1 0 auto;
+    &.row{
+        flex-direction: row;
+    }
+    &.column{
+        flex-direction: column;
+    }
+    &.center{
+        justify-content: center;
+    }
+    &.align-end{
+        align-items: flex-end;
+    }
+    &.justify-end{
+        align-items: flex-end;
+    }
+}
+
+.tablet-wrap{
+    @media (max-width: $tablet) {
+        flex-direction: column;
+    }
+}
+
+.mobile-none {
+    @media (max-width: $phone) {
+        display: none;
+    }
+}

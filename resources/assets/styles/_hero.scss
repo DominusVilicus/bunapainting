@@ -1,0 +1,95 @@
+.hero {
+    font-size: 1.2em;
+    &.grey {
+        background: #E5E5E5;
+    }
+    &.dark{
+        background: #111;
+        color: white;
+    }
+    &.image{
+        background: #111;
+        color: white;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+.inner-hero{
+    margin: auto;
+    max-width: $desktop;
+    width: 100%;
+    &.page{
+        font-family: 'Source Sans Pro', serif;
+        background: white;
+        box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+        line-height: 1.3em;
+        &.max{
+            margin: 0;
+            max-width: none;
+        }
+    }
+    .inner-page{
+        padding: 40px;
+        margin: auto;
+        max-width: 900px;
+        width: 100%;
+        @media (max-width: $tablet) {
+            padding: 20px;
+        }
+    }
+    &.image{
+        background: #111;
+        color: white;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &.dark{
+        background: #111;
+        color: white;
+    }
+    &.max-1000 {
+        max-width: 1000px;
+    }
+    &.max-1400 {
+        max-width: 1400px;
+    }
+}
+
+.padding-none{
+    padding: 10px 30px;
+    @media (max-width: $tablet) {
+        padding: 10px;
+    }
+}
+.padding-tiny{
+    padding: 20px 30px;
+    @media (max-width: $tablet) {
+        padding: 15px;
+    }
+}
+.padding-small{
+    padding: 5vh 40px;
+    @media (max-width: $tablet) {
+        padding: 5vh 15px;
+    }
+}
+.padding-medium{
+    padding: 10vh 40px;
+    @media (max-width: $tablet) {
+        padding: 10vh 15px;
+    }
+}
+.padding-medium-large{
+    padding: 16vh 40px;
+    @media (max-width: $tablet) {
+        padding: 16vh 15px;
+    }
+}
+.padding-large{
+    padding: 20vh 40px;
+    @media (max-width: $tablet) {
+        padding: 20vh 15px;
+    }
+}
