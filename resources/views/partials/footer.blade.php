@@ -55,7 +55,7 @@
         <br>
         <div>{{ get_field('tagline', 'options') }}</div>
         <div class="flex align-end">
-          <a href="https://marketingx.com.au">Web Design by MarketingX</a>
+          <a href="https://insanemarketing.com.au">Web Design by Insane Marketing</a>
         </div>
       </div>
     </div>
